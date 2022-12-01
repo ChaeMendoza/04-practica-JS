@@ -100,13 +100,27 @@ body {
 }
 
 .input {
+    background: gray;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
     width: 90%;
     height: 20px;
     margin: 5px;
 }
 
 .btn {
+    background: #384480;
+    border: 2px solid #384480;
+    border-radius: 10px;
+    color: #FFD700;
     margin: 5px;
-    height: 20px;
+    height: 30px;
     width: 90%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(56, 68, 128, 0.76);
 }

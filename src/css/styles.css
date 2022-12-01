@@ -124,3 +124,21 @@ body {
 .btn:hover {
     background: rgba(56, 68, 128, 0.76);
 }
+
+.clasic-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+footer {
+    margin-top: 40px;
+    color: gray;
+}

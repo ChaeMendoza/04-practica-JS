@@ -1,3 +1,8 @@
+const todos = () => {
+    fetchPokemon();
+    changeHeight();
+}
+
 const fetchPokemon = () => {
     const pokeNameInput = document.getElementById("pokeName");
     let pokeName = pokeNameInput.value;
@@ -12,6 +17,8 @@ const fetchPokemon = () => {
             pokeInfoName("--");
             pokeHeight("--");
             pokeType("--");
+            pokeAbilities("--");
+            pokeAbilities2("--");
             alert("Pokemon no encontrado :(");
         }
         else {
@@ -71,4 +78,26 @@ const pokeAbilities = (url) => {
 const pokeAbilities2 = (url) => {
     let pokeAbilityElement = document.querySelector("#pokeAbility1");
     pokeAbilityElement.innerHTML = url;
+}
+
+
+const changeHeight = () => {
+    let aleratorio = Math.floor(Math.random()*101);
+    let barLife = document.querySelector("#barLife");
+    let barPower = document.querySelector("#barPower");
+    let barAttack = document.querySelector("#barAttack");
+    let barSpecial = document.querySelector("#barSpecial");
+
+    if (aleratorio) {
+        console.log(aleratorio)
+        barLife.style.height = `${aleratorio}%`;
+        barPower.style.height = `${Math.floor(Math.random()*101)}%`;
+        barAttack.style.height = `${Math.floor(Math.random()*101)}%`;
+        barSpecial.style.height = `${Math.floor(Math.random()*101)}%`;
+    } else {
+        barLife.style.height = '2%';
+        barPower.style.height = '2%';
+        barAttack.style.height = '2%';
+        barSpecial.style.height = '2%';
+    }
 }

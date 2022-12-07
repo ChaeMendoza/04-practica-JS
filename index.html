@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Práctica de JavaScript consumiendo la PokeAPI.">
+    <title>Pokedex Launch X</title>
+    <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+<section class="header">
+    <img class="img" src="src/img/logo.png" alt="Img not found" />
+</section>
+<section class="container">
+    <div class="pokedex">
+        <div class="left">
+            <div class="pantalla">
+                <img id="pokeImg" class="pokeImg" src="./src/img/pokebola.png" alt="Img not found" />
+            </div>
+            <div class="controllers">
+                <label class="label">Buscar Pokemón</label>
+                <input class="input" type="text" name="pokeName" id="pokeName" />
+                <button class="btn" onclick="todos()">Buscar</button>
+            </div>
+        </div>
+        <div class="middle">
+            .
+        </div>
+        <div class="right">
+            <div class="clasic-info">
+                <div>
+                    <h3>Name:</h3>
+                    <p class="content" id="pokeInfoName">--</p>
+                </div>
+                <div>
+                    <h3>Height:</h3>
+                    <p class="content" id="pokeHeight">--</p>
+                </div>
+                <div>
+                    <h3>Type:</h3>
+                    <p class="content" id="pokeType">--</p>
+                </div>
+            </div>
+            <div class="more-info">
+                <div class="left-2">
+                    <h3>Abilities:</h3>
+                    <p class="content" id="pokeAbility">--</p>
+                    <p class="content" id="pokeAbility1">--</p>
+                </div>
+                <div class="mini-pantalla">
+                    <img id="pokeImg2" class="img-2" src="src/img/pokebola.png">
+                </div>
+            </div>
+
+            <div class="vertical-bar">
+                <div class="container-bar">
+                    <div class="barcontainer">
+                        <div id="barLife" class="bar">
+                        </div>
+                    </div>
+                    <div class="barcontainer">
+                        <div id="barPower" class="bar" style="height:3%">
+                        </div>
+                    </div>
+                    <div class="barcontainer">
+                        <div id="barAttack" class="bar" style="height:3%">
+                        </div>
+                    </div>
+                    <div class="barcontainer">
+                        <div id="barSpecial" class="bar" style="height:3%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="words-bottom">
+                <div class="separador">
+                    <p class="content">Life</p>
+                    <p class="content">Power</p>
+                    <p class="content">Attack</p>
+                    <p class="content">Special</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <footer>
+        <p class="p-footer">Made with ❤ by Chae Mendoza. © 2022</p>
+    </footer>
+</section>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
